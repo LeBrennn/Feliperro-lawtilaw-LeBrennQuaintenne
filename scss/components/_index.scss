@@ -8,9 +8,9 @@
 
 
 .textoIndex{
-    font-size: $tamanoLetra;
-      border: solid 1px;
-      background-color: $colorCajas;
-      padding: 5px;
+    font-size: map-get($tamanio-tipografias, parrafo);
+    border: solid 1px;
+    background-color: $colorCajas;
+    padding: 5px;
       
   }

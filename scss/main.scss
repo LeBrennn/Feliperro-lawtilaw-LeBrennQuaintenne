@@ -176,16 +176,15 @@ body{
 }
 
 .warning{
-  border: solid 1px;
+  @extend %cajas;
   font-size: map-get($tamanio-tipografias, parrafo );
   margin: 20px;
-  background-color: $colorCajas;
 }
+
 .warn2{
-  border: solid 1px;
+  @extend %cajas;
   font-size: map-get($tamanio-tipografias, parrafo );
-  margin: 20px;
-  background-color: $colorCajas;
+  margin: 20px;  
 }
 
 .linkMovie{
@@ -208,8 +207,7 @@ body{
 
 .textoNS{
   font-size: map-get($tamanio-tipografias, parrafo );
-  border: solid 1px;
-  background-color: #d2a3db;
+  @extend %cajas;
   padding: 5px;
   margin-top: 20px;    
 
@@ -254,17 +252,15 @@ body{
 .loremGaleria{
   font-size: map-get($tamanio-tipografias, parrafo);
   margin: 30px;
-  background-color: #d2a3db;
+  @extend %cajas;
   padding: 10px;
-  border: solid 2px
-}
+  }
 
 .textoContacto{
-  font-size: map-get($tamanio-tipografias, parrafo);
-  border: solid 1px;
+  font-size: map-get($tamanio-tipografias, parrafo);  
   margin: 20px;
   padding-left: 3px;
-  background-color: #d2a3db;
+  @extend %cajas;
 }
 
 .formulario{
@@ -283,24 +279,26 @@ footer{
 }
 
 .tituloFooter1{
-    justify-content: flex-start;
-    color:#F2E3F5;    
-    font-size: map-get($tamanio-tipografias, parrafo );
+  display: flex;
+  justify-content: flex-start;
+  color:#F2E3F5;    
+  font-size: map-get($tamanio-tipografias, parrafo );
 }
 
 .tituloFooter2{
-    justify-content: flex-end;
-    color: #F2E3F5;
-    font-size: map-get($tamanio-tipografias, parrafo );
+  display: flex;
+  justify-content: flex-end;
+  color: #F2E3F5;
+  font-size: map-get($tamanio-tipografias, parrafo );
     
 }
 
 
 .enlacesFooterF{
-    justify-content: flex-start;
+    @include flexfootF(flex-start);
 }
 .enlacesFooterL{
-    justify-content: flex-end;
+    @include flexfootL(flex-end);
 }
 
 .enlacesFooter li{

@@ -7,6 +7,19 @@ $tamanio-tipografias(
     titulos: 48px,
     subtitulos:24px,
     sub-subtitulo:20px,
-    parrafo: 18px
-)
+    parrafo: 18px,
+);
 
+
+%cajas{
+    border: solid 1px;
+    background-color: #d2a3db;
+};
+
+@mixin flexfootF ($justify){
+    justify-content: $justify;
+};
+
+@mixin flexfootL ($justify){
+    justify-content: $justify;
+}

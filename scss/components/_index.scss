@@ -9,8 +9,7 @@
 
 .textoIndex{
     font-size: map-get($tamanio-tipografias, parrafo);
-    border: solid 1px;
-    background-color: $colorCajas;
+    @extend %cajas;
     padding: 5px;
       
   }

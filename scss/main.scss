@@ -9,6 +9,7 @@
 @import './base/variables';
 @import './components/index';
 @import './components/footer';
+@import './components/contacto';
 
 
 
@@ -255,21 +256,6 @@ body{
   @extend %cajas;
   padding: 10px;
   }
-
-.textoContacto{
-  font-size: map-get($tamanio-tipografias, parrafo);  
-  margin: 20px;
-  padding-left: 3px;
-  @extend %cajas;
-}
-
-.formulario{
-  font-size: map-get($tamanio-tipografias, parrafo );
-  border: solid 1px;
-  margin: 20px;
-  margin-right: 60px;
-  padding: 10px;
-}
 
 
 

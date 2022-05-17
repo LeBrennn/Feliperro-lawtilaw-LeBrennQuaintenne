@@ -1,0 +1,38 @@
+footer{
+    display: flex;
+    background-color: black;
+    margin-top: 400px;
+}
+
+.tituloFooter1{
+  display: flex;
+  justify-content: flex-start;
+  color:#F2E3F5;    
+  font-size: map-get($tamanio-tipografias, parrafo );
+}
+
+.tituloFooter2{
+  display: flex;
+  justify-content: flex-end;
+  color: #F2E3F5;
+  font-size: map-get($tamanio-tipografias, parrafo );
+    
+}
+
+
+.enlacesFooterF{
+    @include flexfootF(flex-start);
+}
+.enlacesFooterL{
+    @include flexfootL(flex-end);
+}
+
+.enlacesFooter li{
+    display: inline-block;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.fa-brands{
+    font-size: 40px;
+}

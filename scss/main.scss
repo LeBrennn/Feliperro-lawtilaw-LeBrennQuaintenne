@@ -22,6 +22,7 @@ body{
 }
 
 
+
 .cabecera{
     background-color: black;
 }
@@ -211,25 +212,7 @@ body{
 
 
 
-.imgGal{
-    display: grid;
-    grid-auto-rows: 200px;
-    gap: 1rem;
-    grid-auto-flow: row dense;
-    
-    
-    
-}
 
-.imgGal__img{
-  border-radius: 8%;
-  text-align: center;
-  margin-left: 30px;
-  margin-right: 30px;
-  width: 280px;
-  height: 190px;
-  
-}
 
 .loremGaleria{
   font-size: map-get($tamanio-tipografias, parrafo);
